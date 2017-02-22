@@ -2,8 +2,7 @@
 echo "Ligando modulos"
 modprobe mii ; modprobe usbnet
 echo "Modulos ligados"
-echo "Connecting"
+echo "Conectando"
 dhcpcd usb0
-ping -c4 8.8.8.8 || echo "Error 0000, cant connect!" && exit
-echo "Connected"
+ping -c4 8.8.8.8 || echo "Deu erro"
 exit
