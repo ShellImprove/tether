@@ -3,7 +3,6 @@ echo "Ligando modulos"
 modprobe mii ; modprobe usbnet
 echo "Modulos ligados"
 echo "Conectando"
-sleep 1
 dhclient usb0
 ping -c4 8.8.8.8 || echo "Deu errado"
 exit
